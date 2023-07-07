@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="div5">
+    <h2>Add Expense</h2>
+    </div>
+    <form class="expenseForm">
+        <label for="text">Select Category:</label><br>
+        <input type="radio" name="radio" class="cb" value="Food">
+        <label for="text">Food</label><br>
+        <input type="radio" name="radio" class="cb" value="Grocery">
+        <label for="text">Grocery</label><br>
+        <input type="radio" name="radio" class="cb" value="Bill">
+        <label for="text">Bill</label><br>
+        <input type="radio" name="radio" class="cb" value="Other">
+        <label for="text">Other</label><br>
+        <textarea type="textarea" name="other" id="other" cols="30" rows="5" placeholder="Other, Specify."></textarea><br>
+        <label for="text">Family Member:</label><br>
+        <input type="text" id="name" name="name" placeholder="name"><br>
+        <label for="text">Date/Time:</label><br>
+        <input type="datetime-local" id="datetime" name=datetime"email" placeholder="abc@def.com"><br>
+        <label for="text">Amount:</label><br>
+        <input type="number" id="amount" name="amount" min="0" max="999999">
+        <input type="submit" value="Submit" id="submit" class="save">
+      </form>
+      <br>
+      <div class="div6">
+      <a href="Expense.php"><button>Back</button></a>
+      </div>
+</body>
+</html>

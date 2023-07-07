@@ -1,0 +1,21 @@
+<?php
+include('db.php'); 
+session_start();
+if(!isset($_SESSION['user_id'])){
+  die("please log in");
+};
+?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+  <center> <h2> EXPENSE MANAGEMENT </h2> </center> 
+  <button onclick="document.location='addexpense.php'">ADD EXPENSE</button>
+<button onclick="document.location='loan.html'">MANAGE LOAN</button>
+<button onclick="document.location='removeexpense.html'">REMOVE EXPENSE</button>
+</body>
+</html>
